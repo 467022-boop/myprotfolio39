@@ -1,0 +1,526 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   Reset
+=========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Prompt',sans-serif;
+}
+
+body{
+    background:#fffafc;
+    color:#444;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   Header
+=========================== */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(12px);
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:75px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ff6ea8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ff6ea8;
+}
+
+#menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-top:100px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h3{
+    color:#ff6ea8;
+    font-size:25px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    color:#777;
+    font-size:28px;
+    line-height:45px;
+}
+
+.hero-text p{
+    margin:25px 0;
+    line-height:32px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff6ea8;
+    color:white;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    background:#ff4f92;
+}
+
+.hero-img{
+    flex:1;
+    text-align:center;
+}
+
+.hero-img img{
+    width:380px;
+    height:380px;
+    object-fit:cover;
+    border-radius:50%;
+    border:10px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   Section
+=========================== */
+
+section{
+    padding:100px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#ff6ea8;
+}
+/* ===========================
+   About
+=========================== */
+
+.about-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.7);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#ff6ea8;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.card p{
+    margin:12px 0;
+    line-height:28px;
+}
+
+/* ===========================
+   Education Timeline
+=========================== */
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.timeline-box{
+    background:#ffffff;
+    border-left:6px solid #ff6ea8;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.timeline-box:hover{
+    transform:translateY(-8px);
+}
+
+.timeline-box h3{
+    color:#ff6ea8;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.timeline-box p{
+    color:#555;
+    line-height:28px;
+}
+
+/* ===========================
+   SOP
+=========================== */
+
+.glass{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,.7);
+    backdrop-filter:blur(15px);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.glass p{
+    line-height:35px;
+    font-size:18px;
+    text-align:justify;
+}
+
+/* ===========================
+   Certificates & Activities
+=========================== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+/* ===========================
+   Volunteer
+=========================== */
+
+#volunteer{
+    background:#fff7fb;
+}
+
+#volunteer .glass{
+    text-align:center;
+}
+
+#volunteer p{
+    font-size:18px;
+    line-height:35px;
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+.contact-box{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.contact-box a{
+    width:70px;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:28px;
+    color:white;
+    background:#ff6ea8;
+    border-radius:50%;
+    transition:.3s;
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+.contact-box a:hover{
+    transform:translateY(-8px) scale(1.1);
+    background:#ff4f92;
+}
+
+/* ===========================
+   Back To Top
+=========================== */
+
+#topBtn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#ff6ea8;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+#topBtn:hover{
+    background:#ff4f92;
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#ff6ea8;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+footer p{
+    font-size:15px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-img img{
+    width:280px;
+    height:280px;
+    margin-bottom:30px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-text h2{
+    font-size:22px;
+    line-height:35px;
+}
+
+nav ul{
+    display:none;
+}
+
+#menu-btn{
+    display:block;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.title{
+    font-size:32px;
+}
+
+.gallery{
+    grid-template-columns:1fr;
+}
+
+.about-box{
+    grid-template-columns:1fr;
+}
+
+.timeline{
+    grid-template-columns:1fr;
+}
+
+}
+/* ===========================
+   Loader
+=========================== */
+
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fffafc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    transition:0.6s;
+}
+
+.flower{
+    width:70px;
+    height:70px;
+    border:8px solid #ffd1e6;
+    border-top:8px solid #ff6ea8;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+.hero,
+.card,
+.timeline-box,
+.glass,
+.gallery img{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   Hover Effect
+=========================== */
+
+.gallery img:hover{
+    transform:scale(1.05) rotate(1deg);
+}
+
+.card:hover{
+    box-shadow:0 20px 40px rgba(255,110,168,.25);
+}
+
+.timeline-box:hover{
+    box-shadow:0 15px 35px rgba(255,110,168,.25);
+}
+
+.glass:hover{
+    box-shadow:0 15px 40px rgba(255,110,168,.25);
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ffeef6;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6ea8;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#ff4f92;
+}
+
+/* ===========================
+   Selection
+=========================== */
+
+::selection{
+    background:#ff6ea8;
+    color:#fff;
+}
+    
+
+
